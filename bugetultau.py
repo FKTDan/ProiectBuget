@@ -29,30 +29,3 @@ class Rezultate:
         self.Den_Rez = Den_Rez
         self.Val_Rez = Val_Rez
         self.Cote_Dif = Cote_Dif
-        self.ID_Adm = ID_Adm
-
-
-import mysql.connector
-
-def insert_data():
-
-    mydb = mysql.connector.connect(
-    host="DESKTOP-U937194",
-    user="DanFkt",  
-    password="Anda1Iulia2#", 
-    database ="BugetulTau"
-    )
-
-    mycursor = mydb.cursor()
-
-    file = open('Administratori.txt', 'r')
-    
-    lines =file.readlines()
-    
-    for line in lines:
-        values =  line.split(',')
-        query = "Inset INTO Administratori (ID_Admin, Nume, Prenume, email, parola, isAdmin) values (%s)"
-        mycursor.execute(query, values)
-        mydb.commit()
-        
-    mycursor.close()
