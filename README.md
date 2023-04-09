@@ -1,4 +1,2 @@
-# ProiectBugetulTau
-# Este o aplicatie care te ajuta sa-tui gestionezi mai bine banii.
-# Etapizare:
-#  Pasul 1 ...
+# Proiect Bugetul Tau
+# Este o aplicatie care te ajuta sa-ti gestionezi mai bine banii.
